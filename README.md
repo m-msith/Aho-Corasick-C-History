@@ -11,6 +11,7 @@ To run the binary, navigate to its directory via command line and type "./ac", t
 type "n" and press enter to not continue, otherwise, type "y" and press enter.
 
 Planned changes/feature additions include:
+
 -Removal of the static sized output array in the State data structure, replacing with another linked list for dynamic sizing
 
 -Streamlining and improving user interaction as well as general i/o and reporting fixes 
