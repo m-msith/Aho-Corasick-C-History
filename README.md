@@ -12,7 +12,11 @@ type "n" and press enter to not continue, otherwise, type "y" and press enter.
 
 Planned changes/feature additions include:
 -Removal of the static sized output array in the State data structure, replacing with another linked list for dynamic sizing
+
 -Streamlining and improving user interaction as well as general i/o and reporting fixes 
+
 -Improving comments and formatting
+
 -Conditional compilation for debug messages/having a 'production' branch with no debugging prints
+
 -General inevetable bug corrections and patching the probably prolific memory leaks that have yet to show up 
