@@ -19,19 +19,28 @@ return 0;
 */
 void patternCollection(){
 
-int numPats;
+int numPats = 0; 
+int ctLen = 0;
+int lngLen = 0;
 char temChar;
 FILE *pattFP = fopen("patternHold.txt", "r"); 
 
-//Get the number of lines in the file
+//Get the number of lines in the file as well as the length of the longest pattern for array sizing purposes
 while(temChar != EOF){
+  ctLen++;
   temChar=fgetc(pattFP);
-  if(temChar == '\n')
+  if(temChar == '\n'){
     numPats++;
+    if(ctLen > lngLen){
+	lngLen = ctLen;
+	ctLen = 0;
+    }
   }
+}
 
 fclose(pattFP);
 
+printf("lnglensize %d\n", lngLen);
 //For some reason, need to open up another instance of the file to read in properly.
 FILE *pattFP2 = fopen("patternHold.txt","r");
 
@@ -40,16 +49,16 @@ char **patternStore = malloc(sizeof(char*) * numPats);
 int i;
 
 //read in the lines of the file
-for(i = 0; i < numPats-1; i++){
-  patternStore[i] = malloc(sizeof(char) * 30);
-  fgets(patternStore[i], 30, pattFP2);
+for(i = 0; i < numPats; i++){
+  patternStore[i] = malloc(sizeof(char) * lngLen);
+  fgets(patternStore[i], lngLen, pattFP2);
   }
 
 fclose(pattFP2);
 
 printf("read patfile\n");
 
-AhoAlgo(patternStore, numPats-1);
+AhoAlgo(patternStore, numPats);
 
 }
 
