@@ -1,4 +1,10 @@
 # Aho-Corasick-C
+
+!!!NOTICE!!!
+!!!THIS CODE BASE IS ONLY FOR HISTORICAL REFERENCE OF HOW I CODED C DURING MY LAST YEAR IN UNDERGRAD FOR WHATEVER REASON!!!
+!!!I WOULDN'T USE THIS; VENTURE FORTH ONLY FOR A BIT OF A LAUGH!!!
+!!!NOTICE!!!
+
 Novel Implementation of the Aho-Corasick pattern matching algorithm in C.
 Developed by Martin J Smith on Linux Mint (x64) with an AMD A-10 5800k, 8GB of RAM.
 
@@ -21,3 +27,8 @@ Planned changes/feature additions include:
 -Conditional compilation for debug messages/having a 'production' branch with no debugging prints
 
 -General inevetable bug corrections and patching the probably prolific memory leaks that have yet to show up 
+
+!!!NOTICE!!!
+!!!THIS CODE BASE IS ONLY FOR HISTORICAL REFERENCE OF HOW I CODED C DURING MY LAST YEAR IN UNDERGRAD FOR WHATEVER REASON!!!
+!!!I WOULDN'T USE THIS; VENTURE FORTH ONLY FOR A BIT OF A LAUGH!!!
+!!!NOTICE!!!
